@@ -1,0 +1,351 @@
+/*
+filename: [Halady Raghavendra Prabhu] 
+author: [Halady Raghavendra Prabhu] 
+created: [25 Mar 2024]
+last modified: [25 Mar 2024] 
+description: [style sheet for lab05task1.html & lab05task2.html]
+*/
+
+body {
+	font-family: arial;
+}
+
+article {
+	max-width: 2480px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(images/background.png);
+	background-repeat: repeat-x;
+	background-position: bottom;
+	height: 158px;
+	width: 100%;
+
+}
+
+header h1 {
+	font-family: 'Love Ya Like A Sister', arial;
+	letter-spacing: 4px;
+	font-size: 72px;
+	padding-top: .5em;
+	padding-left: .5em;
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style: none;
+	float: left;
+	font-size: 93%;
+
+}
+
+nav ul li a {
+
+	display: block;
+	font-weight: bold;
+	padding: .625em 3.5em;
+	text-decoration: none;
+	color: #000;
+	border-right: 1px solid #bababa;
+
+}
+
+img {
+	max-width: 100%;
+
+}
+
+#section1,
+#section2,
+#section3 {
+	float: left;
+	width: 30%;
+	text-align: justify;
+	margin: 1em 1em 1em 1em;
+
+}
+
+footer {
+	clear: both;
+}
+
+footer h3 {
+
+	font-family: arial;
+	background-color: #9ac31d;
+	padding: .5em 0 .5em .5em;
+	background-repeat: repeat-x;
+	background-position: bottom;
+}
+
+
+/* THIS IS FOR ROTATING HEADER */
+body {
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+.marquee {
+    color: #000000;
+    font-size: 3em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    transform: translateX(100%);
+    animation: cssmarquee 25s linear infinite;
+}
+
+@keyframes cssmarquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* THIS IS FOR LAYOUT OF THE PAGE */
+
+h1 {
+	color: purple;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	color: rgb(0, 128, 128);
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+aside,
+footer {
+	font-style: italic;
+}
+
+h1,
+h2,
+h3 {
+	font-family: arial;
+
+}
+
+table,
+th,
+td,
+tr {
+	border: 1px solid black;
+}
+
+#images {
+	text-align: center;
+}
+
+#red_color {
+	color: red;
+}
+
+.special {
+	color: darkorange;
+	font-weight: bold;
+}
+
+.right_align {
+	text-align: right;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 0.2em 0.6em;
+	border: 4px solid #ccc;
+}
+
+ol {
+	list-style-type: lower-roman;
+
+}
+
+ul {
+	list-style-type: square;
+}
+
+aside {
+	border: 4px inset purple;
+	border-radius: 14px;
+	margin: 1em;
+	padding: 1em;
+	background: url(images/fade.jpg) repeat-x top left;
+	width: 95%;
+	float: center;
+}
+
+header {
+
+	border: 1px solid darkgray;
+	margin: 0.5em;
+	padding: 0.5em;
+	background-color: lightgray;
+	text-align: center;
+}
+
+aside:hover {
+	display: block;
+}
+
+nav a:hover {
+	background-color: lightblue;
+	border-color: darkblue;
+
+}
+
+.menu {
+	display: inline-block;
+}
+
+#lists,
+#images,
+#tables,
+#hyperlinks {
+	width: 50%;
+	text-align: center;
+}
+
+#lists {
+	float: left;
+}
+
+table {
+	margin: auto;
+}
+
+#tables {
+	float: right;
+	margin: auto;
+}
+
+#hyperlinks {
+	clear: left;
+	float: left;
+
+}
+
+#images {
+	float: center;
+}
+
+figure {
+	border: 2px solid #ccc;
+}
+
+footer {
+	border-top: 4px double darkgray;
+	clear: both;
+}
+
+ol,
+ul,
+dl {
+	text-align: left;
+}
+
+footer p {
+
+	display: inline-block;
+	width: 33%;
+}
+
+footer p:first-child {
+	float: left;
+}
+
+footer p:nth-child(2) {
+	text-align: center;
+}
+
+
+footer p:last-child {
+	float: right;
+	text-align: right;
+}
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
+/* THIS FOR THE RESPONSIVENESS OF THE FILE */
+@media screen and (min-width: 31.25em) {
+
+	nav ul li {
+		width: 33%;
+
+	}
+
+	#section1 {
+
+		width: 43%;
+	}
+
+	#section2 {
+		width: 43%;
+	}
+
+	#section3 {
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+
+	#section3 img {
+
+		float: left;
+		width: 30%;
+		margin: .5em 1em 1em 0;
+	}
+
+	article {
+		min-width: 600px;
+	}
+
+	@media screen and (max-width:31.25em) {
+
+		header h1 {
+
+			font-size: 48px;
+			padding: 0;
+			text-align: center;
+		}
+
+		nav ul li {
+
+			width: 400em;
+		}
+
+		#section1,
+		#section2,
+		#section3 {
+			margin: 0;
+			float: none;
+			width: 400em;
+		}
+
+		img {
+			display: block;
+			margin: 0 auto;
+		}
+
+		article {
+			min-width: 400em;
+		}
+
+	}
+}
