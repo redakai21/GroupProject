@@ -349,3 +349,58 @@ footer p:last-child {
 
 	}
 }
+
+
+/* index page css*/
+.headerclass {
+	background-color: #e6ccff;
+}
+
+.contentindex aside {
+	background-color: #ffffff;
+}
+
+.contentindex article h2{
+	text-align: center;
+}
+
+.contentindex {
+	text-align: center;
+}
+
+/* Container holding the image and the text */
+.containerindex {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.containerindex img {
+	object-fit: fill;
+}
+
+
+/* Centered text */
+.imagetext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.contentindex {
+	background-image: url(images/background.jpg);
+	background-repeat: repeat;
+    background-size: cover;
+	color: black;
+}
+.contentindex h1{
+	color: white;
+	font-family: verdana;
+}
+
+/*end of index page css*/
+
